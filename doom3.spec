@@ -1,4 +1,4 @@
-# NOTE: You could add to your 'mirrors', to get stuff downloaded: 
+# NOTE: You could add to your 'mirrors', to get stuff downloaded:
 #  ftp://dl.xs4all.nl/pub/mirror/idsoftware/idstuff/doom3/linux/
 # TODO:
 #  - package dedicated server - doomded.x86, I couldn't get doom3 running so I
@@ -18,9 +18,9 @@ Release:	0.1
 Vendor:		id Software
 License:	DOOM3
 Group:		Applications/Games
-Source0:	ftp://ftp.idsoftware.com/idstuff/doom3/linux/doom3-linux-%{version}.x86.run
+Source0:	ftp://ftp.idsoftware.com/idstuff/doom3/linux/%{name}-linux-%{version}.x86.run
 # NoSource0-md5:	2a45d0769b39473887c61a11cbba981c
-Source1:	ftp://ftp.idsoftware.com/idstuff/doom3/linux/doom3-linux-%{version}-demo.x86.run
+Source1:	ftp://ftp.idsoftware.com/idstuff/doom3/linux/%{name}-linux-%{version}-demo.x86.run
 # NoSource1-md5:	81dcf8ead198f14844c554b25e07abbe
 Source2:	%{name}.desktop
 NoSource:	0
