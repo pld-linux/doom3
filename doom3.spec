@@ -4,6 +4,7 @@
 #  - package dedicated server - doomded.x86, I couldn't get doom3 running so I
 #  wasn't interested anymore :)
 #  - check if system libstdc++ and libgcc_s can be used
+#    answered here: http://zerowing.idsoftware.com/linux/doom/#head-d15dfbca9b3ba90b9bacb7476ad2f0afe3bb0f72
 #  - check license?
 #
 # Conditional build:
