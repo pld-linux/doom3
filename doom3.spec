@@ -7,8 +7,9 @@
 #
 # Conditional build:
 %bcond_with	demo	# package demo data
-#
+
 Summary:	Doom III - 3rd installment of the classic id 3D first-person shooter
+Summary(pl):	Doom III - trzecia czê¶æ klasyki FPP z id Software
 Name:		doom3
 Version:	1.1.1286
 Release:	0.1
@@ -25,12 +26,15 @@ ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		no_install_post_strip	1
-%define     _noautoprov   libgcc_s.so.1 libstdc++.so.5
 
+%define		_noautoprov	libgcc_s.so.1 libstdc++.so.5
 %define		_gamedir	/usr/share/games/doom3
 
 %description
 Doom III demo for Linux.
+
+%description -l pl
+Demo Doom III dla Linuksa.
 
 %prep
 %setup -qcT
