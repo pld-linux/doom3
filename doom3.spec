@@ -32,7 +32,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		no_install_post_strip	1
 
 %define		_noautoprov		libgcc_s.so.1 libstdc++.so.5
-%define		_noautoreqdep	libgcc_s.so.1 libstdc++.so.5
+%define		_noautoreq		libgcc_s.so.1 libstdc++.so.5
 %define		_gamelibdir		%{_libdir}/games/doom3
 %define		_gamedatadir	%{_datadir}/games/doom3
 
