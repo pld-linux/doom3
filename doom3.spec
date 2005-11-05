@@ -14,7 +14,7 @@ Summary:	Doom III - 3rd installment of the classic id 3D first-person shooter
 Summary(pl):	Doom III - trzecia czê¶æ klasyki FPP z id Software
 Name:		doom3
 Version:	1.1.1286
-Release:	0.1
+Release:	0.2
 Vendor:		id Software
 License:	DOOM3
 Group:		Applications/Games
@@ -57,7 +57,7 @@ install bin/Linux/x86/doom.x86 $RPM_BUILD_ROOT%{_gamedir}
 install %{name}.png $RPM_BUILD_ROOT%{_pixmapsdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
 
-cat << EOF > $RPM_BUILD_ROOT%{_bindir}/%{name}
+cat << 'EOF' > $RPM_BUILD_ROOT%{_bindir}/%{name}
 #!/bin/sh
 # Needed to make symlinks/shortcuts work.
 # the binaries must run with correct working directory
