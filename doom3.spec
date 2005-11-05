@@ -4,6 +4,7 @@
 #  - package dedicated server - doomded.x86
 #  - check if system libstdc++ and libgcc_s can be used
 #    answered here: http://zerowing.idsoftware.com/linux/doom/#head-d15dfbca9b3ba90b9bacb7476ad2f0afe3bb0f72
+#    so? we are not gentoo.
 #  - check license?
 #
 # Conditional build:
@@ -45,8 +46,12 @@ you could try playing demo by installing %{name}-demo package.
 %description -l pl
 Doom III dla Linuksa.
 
+Do grania trzeba skopiowaæ pliki danych z p³yty Doom III, albo mo¿na
+spróbowaæ graæ w wersji demo instaluj±c pakiet %{name}-demo.
+
 %package demo
 Summary:	Doom III Demo data files
+Summary(pl):	Pliki danych Doom III Demo
 Group:		Applications/Games
 Version:	%{demo_version}
 # main package version is mostly bigger than demo itself.
@@ -54,6 +59,9 @@ Requires:	%{name} >= %{demo_version}
 
 %description demo
 This package contains the data files for Doom III Demo.
+
+%description demo -l pl
+Ten pakiet zawiera pliki danych dla gry Doom III Demo.
 
 %prep
 %setup -qcT
