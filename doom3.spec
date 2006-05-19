@@ -12,6 +12,7 @@
 %define		demo_version 1.1.1286
 #
 Summary:	Doom III - 3rd installment of the classic id 3D first-person shooter
+Summary(de):	Doom III - der dritte Teil des FPP Klassikers von id Software
 Summary(pl):	Doom III - trzecia czê¶æ klasyki FPP z id Software
 Name:		doom3
 Version:	1.3.1302
@@ -43,6 +44,13 @@ Doom III for Linux.
 To play the game you need to copy data files from your Doom III CD or
 you could try playing demo by installing %{name}-demo package.
 
+%description -l de
+Doom III für Linux.
+
+Um das Spiel zu spielen musst du die Dateien aus deiner Doom III CD
+kopieren oder du kannst das Demo ausprobieren indem du %{name}-demo
+installierst.
+
 %description -l pl
 Doom III dla Linuksa.
 
@@ -51,6 +59,7 @@ spróbowaæ graæ w wersji demo instaluj±c pakiet %{name}-demo.
 
 %package demo
 Summary:	Doom III Demo data files
+Summary(de):	Doom III Demo Dateien
 Summary(pl):	Pliki danych Doom III Demo
 Group:		Applications/Games
 Version:	%{demo_version}
@@ -59,6 +68,9 @@ Requires:	%{name} >= %{demo_version}
 
 %description demo
 This package contains the data files for Doom III Demo.
+
+%description demo -l de
+Dieses Packet enthält Dateien für das Doom III Demo.
 
 %description demo -l pl
 Ten pakiet zawiera pliki danych dla gry Doom III Demo.
