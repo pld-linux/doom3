@@ -12,8 +12,8 @@
 %define		demo_version 1.1.1286
 #
 Summary:	Doom III - 3rd installment of the classic id 3D first-person shooter
-Summary(de.UTF-8):   Doom III - der dritte Teil des FPP Klassikers von id Software
-Summary(pl.UTF-8):   Doom III - trzecia część klasyki FPP z id Software
+Summary(de.UTF-8):	Doom III - der dritte Teil des FPP Klassikers von id Software
+Summary(pl.UTF-8):	Doom III - trzecia część klasyki FPP z id Software
 Name:		doom3
 Version:	1.3.1302
 Release:	0.8
@@ -59,8 +59,8 @@ spróbować grać w wersji demo instalując pakiet %{name}-demo.
 
 %package demo
 Summary:	Doom III Demo data files
-Summary(de.UTF-8):   Doom III Demo Dateien
-Summary(pl.UTF-8):   Pliki danych Doom III Demo
+Summary(de.UTF-8):	Doom III Demo Dateien
+Summary(pl.UTF-8):	Pliki danych Doom III Demo
 Group:		Applications/Games
 Version:	%{demo_version}
 # main package version is mostly bigger than demo itself.
