@@ -2,9 +2,6 @@
 #  ftp://dl.xs4all.nl/pub/mirror/idsoftware/idstuff/doom3/linux/
 # TODO:
 #  - package dedicated server - doomded.x86
-#  - check if system libstdc++ and libgcc_s can be used
-#    answered here: http://zerowing.idsoftware.com/linux/doom/#head-d15dfbca9b3ba90b9bacb7476ad2f0afe3bb0f72
-#    so? we are not gentoo.
 #  - check license?
 #
 # Conditional build:
@@ -15,13 +12,13 @@ Summary:	Doom III - 3rd installment of the classic id 3D first-person shooter
 Summary(de.UTF-8):	Doom III - der dritte Teil des FPP Klassikers von id Software
 Summary(pl.UTF-8):	Doom III - trzecia część klasyki FPP z id Software
 Name:		doom3
-Version:	1.3.1302
-Release:	0.8
+Version:	1.3.1.1304
+Release:	0.1
 Vendor:		id Software
 License:	DOOM3
 Group:		Applications/Games
 Source0:	ftp://ftp.idsoftware.com/idstuff/doom3/linux/%{name}-linux-%{version}.x86.run
-# NoSource0-md5:	b1d04da2d64bb8d54f64cbaa2fdb4490
+# NoSource0-md5:	6325f0936f59420d33668754032141cb
 Source1:	ftp://ftp.idsoftware.com/idstuff/doom3/linux/%{name}-linux-%{demo_version}-demo.x86.run
 # NoSource1-md5:	81dcf8ead198f14844c554b25e07abbe
 Source2:	%{name}.desktop
@@ -33,9 +30,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		no_install_post_strip	1
 
-%define		_noautoprov		libgcc_s.so.1 libstdc++.so.5
-%define		_noautoreq		libgcc_s.so.1 libstdc++.so.5
-%define		_gamelibdir		%{_libdir}/games/doom3
+%define		_gamelibdir	%{_libdir}/games/doom3
 %define		_gamedatadir	%{_datadir}/games/doom3
 
 %description
@@ -88,7 +83,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_gamelibdir},%{_gamedatadir}/{demo,base}} \
 	$RPM_BUILD_ROOT{%{_pixmapsdir},%{_desktopdir},%{_bindir}}
 
-install libgcc_s.so.1 libstdc++.so.5 $RPM_BUILD_ROOT%{_gamelibdir}
 install bin/Linux/x86/doom.x86 $RPM_BUILD_ROOT%{_gamelibdir}
 
 install %{name}.png $RPM_BUILD_ROOT%{_pixmapsdir}
@@ -121,8 +115,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/%{name}
 %dir %{_gamelibdir}
 %attr(755,root,root) %{_gamelibdir}/doom.x86
-%attr(755,root,root) %{_gamelibdir}/libgcc_s.so.1
-%attr(755,root,root) %{_gamelibdir}/libstdc++.so.5
 %{_desktopdir}/%{name}.desktop
 %{_pixmapsdir}/%{name}.png
 %dir %{_gamedatadir}
