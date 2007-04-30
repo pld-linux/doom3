@@ -20,7 +20,7 @@ Release:	0.8
 Vendor:		id Software
 License:	DOOM3
 Group:		Applications/Games
-Source0:	ftp://ftp.idsoftware.com/idstuff/doom3/linux/%{name}-linux-%{version}.x86.run
+Source0:	ftp://ftp.idsoftware.com/idstuff/doom3/linux/old/%{name}-linux-%{version}.x86.run
 # NoSource0-md5:	b1d04da2d64bb8d54f64cbaa2fdb4490
 Source1:	ftp://ftp.idsoftware.com/idstuff/doom3/linux/%{name}-linux-%{demo_version}-demo.x86.run
 # NoSource1-md5:	81dcf8ead198f14844c554b25e07abbe
@@ -36,7 +36,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_noautoprov		libgcc_s.so.1 libstdc++.so.5
 %define		_noautoreq		libgcc_s.so.1 libstdc++.so.5
 %define		_gamelibdir		%{_libdir}/games/doom3
-%define		_gamedatadir	%{_datadir}/games/doom3
+%define		_gamedatadir		%{_datadir}/games/doom3
 
 %description
 Doom III for Linux.
