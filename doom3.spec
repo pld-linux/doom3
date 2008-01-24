@@ -31,8 +31,6 @@ URL:		http://www.doom3.com/
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		no_install_post_strip	1
-
 %define		_noautoprov		libgcc_s.so.1 libstdc++.so.5
 %define		_noautoreq		libgcc_s.so.1 libstdc++.so.5
 %define		_gamelibdir		%{_libdir}/games/doom3
