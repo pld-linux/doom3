@@ -97,7 +97,7 @@ cat << 'EOF' > $RPM_BUILD_ROOT%{_bindir}/%{name}
 # Needed to make symlinks/shortcuts work.
 # the binaries must run with correct working directory
 cd %{_gamelibdir}
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+$LD_LIBRARY_PATH:}.
 exec ./doom.x86 "$@"
 EOF
 
